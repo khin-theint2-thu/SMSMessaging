@@ -1,0 +1,77 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding:0;
+    margin:0;
+    background:#5a80c4;
+}
+
+
+.container{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+    align-items:center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.sendSMS{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    flex-basis:85%;
+    background:#fff;
+    height:85%;
+    padding-left:20px;
+    box-shadow:14px 14px 32px 22px rgba(0,0,0,0);
+}
+
+    .sendSMS input, textarea, select {
+        margin: 10px 0px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        outline: 1px solid #f6f6f6;
+    }
+
+        .sendSMS input[type=tel] {
+            width: 35%;
+        }
+
+            .sendSMS input[type=tel]:read-only {
+                background: #f9f9f9;
+            }
+
+        .sendSMS input[type=submit] {
+            width: 10%;
+            background: #5a80c4;
+            color: #fff;
+        }
+
+    .sendSMS textarea {
+        height: 10rem;
+        width: 50%;
+    }
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+
+    .input-group select:read-only {
+        width: 40%;
+        background: #f9f9f9;
+    }
+
+    .input-group input[type=text] {
+        width: 40%;
+        background: #f9f9f9;
+    }
+
+    .input-group input:nth-child(2) {
+        width: 60%;
+    }
+
